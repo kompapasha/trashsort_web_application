@@ -1,0 +1,114 @@
+.header-content{
+    max-width: 1920px;
+    height: min(1040px, 100vw);
+    margin: auto;
+}
+.header-content-main {
+    position: relative;
+    height: 80%;
+}
+.header-content-main img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/*
+///////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////HEADER///////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////
+*/
+.header-maintext {
+    width: 80%;
+    position: absolute;
+    bottom: 53%;
+    right: 50%;
+    transform: translate(50%, 50%);
+}
+.header-maintext h1 {
+    font-weight: lighter;
+    color: white;
+    font-size: min(calc(7vw + 8px), 10em);
+    line-height: 0.7em;
+}
+.header-maintext h1 .more-to-know {
+    position: relative;
+    bottom: 1.5vw;
+    padding: 1em min(2.5vw, 40px);
+    font-size: 1rem;
+    border-radius: 5vw;
+    color: white;
+    border: none;
+    background-color: rgb(0, 0, 0);
+}
+.header-maintext h1 .more-to-know > * {
+    margin-left: 2px;
+    transform: rotate(45deg) translate(2px, 2px) scale(1.2);
+    font-size: 100%;
+}
+.header-maintext h1 .more-to-know:hover > * {
+    transform: rotate(90deg) translate(2px, 1px) scale(1.1);
+    font-size: 100%;
+}
+.header-maintext h1 .more-to-know:active {
+    color: black;
+    background-color: #ffffff60;
+}   
+.header-maintext h1 .more-to-know:active > * {
+    color: black;
+}
+.header-maintext h1 .last-span {
+    display: block;
+    text-indent: 0.8em;
+}
+.header-interesting-fact {
+    display: flex;
+    flex-wrap: nowrap;
+    position: absolute;
+    width: 54%;
+    height: min(calc(16vw + 10px), 160px);
+    border-radius: 3em;
+    border: 3px solid white;
+    right: 4%;
+    bottom: max(calc(-4vw - 30px), -90px); 
+    backdrop-filter: blur(10px);
+}
+.header-interesting-fact .fact-header {
+    align-self: center;
+    padding-inline: 1.75em 1.1em;
+}
+.header-interesting-fact .fact-text {
+    align-self: center;
+    padding-inline: 1.25em 2em;
+    text-align: justify;
+    font-size: 17px;
+}
+.header-interesting-fact .fact-text p {
+    width: 100%;
+}
+/*
+////////////////////////////////////////media//////////////////////////////////////
+*/
+@media screen and (max-width: 1040px)  {
+    .header-interesting-fact {
+        width: 92%;
+        right: 4%;
+    }
+    .header-maintext h1 .more-to-know {
+        padding: 0.8em 1.5vw;
+        font-size: 14px;
+    }
+}
+@media screen and (max-width: 600px)  {
+    .header-interesting-fact {
+        display: none;
+    }
+    .header-content {
+        margin-bottom: -5em;
+    }
+    .header-maintext h1 {
+        line-height: 1em;
+    }
+    .header-maintext h1 .more-to-know {
+        display: none;
+    }
+}

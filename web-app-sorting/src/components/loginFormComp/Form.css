@@ -1,0 +1,133 @@
+.opened-pop-up {
+  display: none;
+}
+  
+.login-popup {
+  display: flex;
+  z-index: 8000;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.501);
+}
+.login-popup-content {
+  position: relative;
+  max-width: 500px;
+  width: calc(100% - 4em);
+  
+  backdrop-filter: blur(4px);
+  background-color: rgba(0, 0, 0, 0.701);
+  border: 1px solid white;
+  border-radius: 40px;
+  padding: 3em 7em 3em 4em;
+}
+.login-popup-content .login-popup-content-button {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+}
+.login-popup-content h2 {
+  font-size: 2.5em;
+  color: white;
+  font-weight: bolder;
+  margin-bottom: .75em;
+}
+  /*
+    .login-popup-content input {
+      display: block;
+      width: 100%;
+      border: 2px solid white;
+      border-radius: 32px;
+      font-size: 1em;
+      padding: 1em;
+      padding-left: 1.5em;
+      margin-block: 1.5em;
+      background-color: rgba(0, 0, 0, 0);
+      color: white;
+    }
+  */
+.login-popup-content .input-form {
+  font-size: 1em;
+  background-color: rgba(0, 0, 0, 0);
+  color: white;
+  margin-bottom: 1.2em;
+}
+.leaflet-popup-content p {
+  margin: .4em 0;
+}
+.login-popup-content .input-form::placeholder {
+  color: white;
+}
+.login-popup-content div button {
+  display: block;
+  width: 100%;
+  font-size: 1em;
+  color: white;
+  padding-block: 1em;
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+}
+.login-popup-content .change-process-form {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2em;
+}
+.login-popup-content .change-process-form * {
+  color: white;
+  text-decoration: none;
+  padding-block: .2em;
+  border-bottom: 1px solid white;
+}
+.login-popup-content > button {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 1px solid white;
+  background-color: transparent;
+  color: white;
+}
+.login-popup-content > button:hover {
+  border: 1px outset white;
+}
+.login-leave-form {
+  margin-block: 5em;
+}
+
+@media screen and (max-width: 700px)  {
+  .login-popup-content h2 {
+    font-size: 1.5em;
+  }
+  .login-popup-content {
+    padding: 2.5em 4em 2.5em 2em;
+  }
+}
+
+@media screen and (max-width: 600px)  {
+  .leaflet-popup {
+    max-width: 500px;
+  } 
+}
+
+@media screen and (max-width: 500px)  {
+  .leaflet-popup {
+    max-width: 400px;
+  } 
+}
+
+@media screen and (max-width: 400px)  {
+  .leaflet-popup {
+    max-width: 300px;
+  } 
+}
+
+@media screen and (max-width: 300px)  {
+  .leaflet-popup {
+    max-width: 250px;
+  } 
+}
+
+/* Зробити стиль кнопки. Також зробити стиль для атрибуту disabled*/

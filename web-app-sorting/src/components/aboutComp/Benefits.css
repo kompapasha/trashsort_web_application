@@ -1,0 +1,343 @@
+.section-benefits {
+    width: min(calc(100% - 4em), 1200px);
+    margin: auto;
+    margin-block: -7.5em 3em;
+}
+.section-content-benefits {
+    display: flex;
+    flex-wrap: wrap;
+    gap: min(1.5em, calc(2vw - 4px));
+}
+h3 {
+    font-weight: lighter;
+    font-size: 30px;
+    padding-inline: 16px;
+    padding-block: 28px;
+    /*padding-block: min(calc(2vw + 2px), 28px);*/
+}
+img {
+    filter: brightness(92%);
+}
+/*
+///////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////FIRST///////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////
+*/
+.section-element-first {
+    flex: 0 1 25%;
+    height: 550px;
+    border-radius: 2em;
+    overflow: hidden;
+}
+.section-element {
+    position: relative;
+    height: 100%;
+}
+.section-element img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;  
+    border-radius: 2em; 
+}
+.section-element-first .section-element figcaption {
+    position: absolute;
+    z-index: 1;
+    border-radius: 2em; 
+    background-color: rgba(187, 187, 187, 0.397);
+    backdrop-filter: blur(10px);
+    width: 100%;
+    color: white;
+    padding-bottom: 3em;
+    bottom: -215px;
+    height: 350px;
+    transition-property: all;
+    transition-duration: 0.75s;
+}
+.section-element-first .section-element figcaption .hiddensection {
+    padding-inline: 16px;
+    color: rgba(255, 255, 255, 0);
+    transition-property: color;
+    transition-duration: 0.25s;
+    transition-delay: 0.75s;
+}
+.section-element-first .section-element:hover figcaption {
+    bottom: -50px;
+}
+.section-element-first .section-element:hover .hiddensection {
+    color: rgba(255, 255, 255, 1);
+}
+/*
+///////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////TWO////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////
+*/
+.section-element-second {
+    flex: 0 1 29%;
+    height: 550px;
+    border-radius: 2em;
+    overflow: hidden;
+}
+.section-element-second .section-element figcaption {
+    position: absolute;
+    z-index: 1;
+    border-radius: 2em; 
+    background-color: rgba(187, 187, 187, 0.397);
+    backdrop-filter: blur(10px);
+    width: 100%;
+    color: white;
+    bottom: -215px;
+    bottom: -215px;
+    height: 350px;
+    transition-property: all;
+    transition-duration: 0.75s;
+}
+.section-element-second .section-element figcaption .hiddensection {
+    padding-inline: 16px;
+    color: rgba(255, 255, 255, 0);
+    transition-property: color;
+    transition-duration: 0.25s;
+    transition-delay: 0.75s;
+}
+.section-element-second .section-element:hover figcaption {
+    bottom: -50px;
+}
+.section-element-second .section-element:hover .hiddensection {
+    color: rgba(255, 255, 255, 1);
+}
+/*
+///////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////THREE///////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////
+*/
+.section-element-third {
+    flex: 0 1 39%;
+    height: auto;
+    margin-left: auto;
+}
+.section-element-header h2{
+    font-size: min(calc(4vw + 6px), 64px);
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-bottom: 0.5em;
+}
+.section-element-third p {
+    font-size: 18px;
+}
+/*
+///////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////FOUR///////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////
+*/
+.section-element-forth {
+    flex: 0 1 60%;
+    height: 360px;
+    border-radius: 2em;
+    overflow: hidden;
+}
+.section-element-forth .section-element figcaption {
+    position: absolute;
+    z-index: 1;
+    border-radius: 2em; 
+    background-color: rgba(187, 187, 187, 0.397);
+    backdrop-filter: blur(10px);
+    width: 100%;
+    color: white;
+    padding-bottom: 3em;
+    bottom: -255px;
+    height: 350px;
+    transition-property: all;
+    transition-duration: 0.75s;
+}
+.section-element-forth .section-element figcaption .hiddensection {
+    padding-inline: 16px;
+    color: rgba(255, 255, 255, 0);
+    transition-property: color;
+    transition-duration: 0.25s;
+    transition-delay: 0.75s;
+}
+.section-element-forth .section-element:hover figcaption {
+    bottom: -150px;
+}
+.section-element-forth .section-element:hover .hiddensection {
+    color: rgba(255, 255, 255, 1);
+}
+/*
+///////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////FIVE///////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////
+*/
+.section-element-fifth {
+    flex: 0 1 37%;
+    height: 360px;
+    border-radius: 2em;
+    overflow: hidden;
+}
+.section-element-fifth .section-element figcaption {
+    position: absolute;
+    z-index: 1;
+    border-radius: 2em; 
+    background-color: rgba(187, 187, 187, 0.397);
+    backdrop-filter: blur(10px);
+    width: 100%;
+    color: white;
+    padding-bottom: 3em;
+    bottom: -255px;
+    height: 350px;
+    transition-property: all;
+    transition-duration: 0.75s;
+}
+.section-element-fifth .section-element figcaption .hiddensection {
+    padding-inline: 16px;
+    color: rgba(255, 255, 255, 0);
+    transition-property: color;
+    transition-duration: 0.25s;
+    transition-delay: 0.75s;
+}
+.section-element-fifth .section-element:hover figcaption {
+    bottom: -150px;
+}
+.section-element-fifth .section-element:hover .hiddensection {
+    color: rgba(255, 255, 255, 1);
+}
+/*
+////////////////////////////////////////media//////////////////////////////////////
+*/
+@media screen and (max-width: 1040px)  {
+    .section-benefits {
+        margin-top: 1em;
+    }
+    h3 {
+        font-size: 24px;
+        padding-block: 24px;
+    }
+    .section-element-first {
+        flex: 0 1 49%;
+        order: 2;
+        height: 360px;
+    }
+    .section-element-first .section-element figcaption {
+        bottom: -270px;
+        height: 350px;
+    }
+    .section-element-first .section-element:hover figcaption {
+        bottom: -100px;
+        height: 350px;
+    }
+    .section-element-second{
+        flex: 0 1 49%;
+        order: 3;
+        height: 360px;
+    }
+    .section-element-second .section-element figcaption {
+        bottom: -270px;
+        height: 350px;
+    }
+    .section-element-second .section-element:hover figcaption {
+        bottom: -100px;
+        height: 350px;
+    }
+    .section-element-third {
+        flex: 0 1 100%;
+        order: 1;
+        margin-bottom: 2em;
+    }
+    .section-element-forth {
+        flex: 0 1 49%;
+        order: 4;
+    }
+    .section-element-forth .section-element figcaption {
+        bottom: -270px;
+        height: 350px;
+    }
+    .section-element-forth .section-element:hover figcaption {
+        bottom: -100px;
+        height: 350px;
+    }
+    .section-element-fifth {
+        flex: 0 1 49%;
+        order: 5;
+    }
+    .section-element-fifth .section-element figcaption {
+        bottom: -270px;
+        height: 350px;
+    }
+    .section-element-fifth .section-element:hover figcaption {
+        bottom: -100px;
+        height: 350px;
+    }
+    .section-element:hover figcaption {
+        height: 60%;
+    }
+}
+@media screen and (max-width: 695px)  {
+    .section-element-second .section-element figcaption {
+        bottom: -240px;
+        height: 350px;
+    }
+    .section-element-second .section-element:hover figcaption {
+        bottom: -100px;
+        height: 350px;
+    }
+}
+@media screen and (max-width: 600px)  {
+    .section-element-first .section-element figcaption .hiddensection {
+        color: white;
+    }
+    .section-element-second .section-element figcaption .hiddensection {
+        color: white;
+    }
+    .section-element-forth .section-element figcaption .hiddensection {
+        color: white;
+    }
+    .section-element-fifth .section-element figcaption .hiddensection {
+        color: white;
+    }
+    .section-benefits {
+        width: calc(100% - 1em);
+    }
+    .section-element-first {
+        flex-basis: 100%;
+        height: 250px;
+    }
+    .section-element-first .section-element figcaption {
+        bottom: 0px;
+        height: 250px;
+    }
+    .section-element-second{
+        flex-basis: 100%;
+        height: 250px;
+    }
+    .section-element-second .section-element figcaption {
+        bottom: 0px;
+        height: 250px;
+    }
+    .section-element-forth {
+        flex-basis: 100%;
+        height: 250px;
+    }
+    .section-element-forth .section-element figcaption {
+        bottom: 0px;
+        height: 250px;
+    }
+    .section-element-fifth {
+        flex-basis: 100%;
+        height: 250px;
+    }
+    .section-element-fifth .section-element figcaption {
+        bottom: 0px;
+        height: 250px;
+    }
+    .section-element:hover figcaption {
+        height: 75%;
+    }
+}
+@media screen and (max-width: 400px)  {
+    .section-element:hover figcaption {
+        height: 100%;
+    }
+}
+
+/*
+
+*/

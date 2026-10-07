@@ -1,0 +1,78 @@
+.footer {
+    width: min(calc(100% - 4em), 1200px);
+    margin: auto;
+    margin-block: 1em 3em;
+}
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    height: 300px;
+}
+.univ-logo h4 {
+    display: inline-block;
+    font-size: 18px;
+    padding: .5em 1.3em;
+    background-color: white;
+    border-radius: 18px;
+}
+.footer-nav {
+    margin-top: 1em;
+}
+.footer-nav nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    gap: 1em;
+    width: 250px;
+}
+.footer-nav nav ul li {
+    flex: 0 0 45%;
+}
+.footer-nav nav ul li a{
+    display: block;
+    text-decoration: none;
+    color: rgba(94, 94, 94, 0.893);
+}
+.footer-content .login-button {
+
+}
+.login-button button {
+    display: block;
+    padding: 0.8em 2em;
+    border: 1px solid rgba(94, 94, 94, 0.493);
+    color: rgba(94, 94, 94, 0.893);
+    border-radius: 32px;
+    background-color: white;
+}
+/*
+////////////////////////////////////////media//////////////////////////////////////
+*/
+@media screen and (max-width: 700px)  {
+    .footer-content {
+        flex-wrap: wrap;
+        height: 200px;
+    }
+    .login-button {
+        flex: 1 0 100%;
+    }
+    .login-button button {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 450px) {
+    .univ-logo {
+        flex: 1 0 100%;
+        text-align: center;
+    }
+    .footer-nav {
+        width: 100%;
+    }
+    .footer-nav nav ul{
+        width: 100%;
+    }
+    .login-button {
+        margin-top: 1em;
+    }
+}

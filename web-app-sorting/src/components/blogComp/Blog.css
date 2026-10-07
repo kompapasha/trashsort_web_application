@@ -1,0 +1,91 @@
+/* ---------------------------------------------------
+  ----------------------HEADER-----------------------
+----------------------------------------------------  */ 
+.section-blog {
+    width: min(calc(100% - 4em), 1200px);
+    margin: auto;
+    margin-block: 1em 3em;
+}
+.section-content-blog {
+}
+.section-blog-header {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin-bottom: 1em;
+}
+.section-blog-header h2{
+    font-size: min(calc(4vw + 6px), 64px);
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-bottom: 0.7em;
+}
+.section-blog-header .section-blog-more {
+    align-self: center;
+} 
+.section-blog-header .section-blog-more a {
+    text-decoration: none;
+    color: rgba(128, 128, 128, 0.5);  
+}
+.section-blog-header .section-blog-more a::after {
+    content: "";
+}
+/* ---------------------------------------------------
+  ----------------------ARTICLES---------------------
+----------------------------------------------------  */ 
+.section-blog-articles-content {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+.section-blog-articles-content > *{
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 1em;
+}
+/* ---------------------------------------------------
+  ------------------ARTICLES-BUTTON------------------
+----------------------------------------------------  */ 
+.section-blog-articles-button {
+    display: flex;
+    margin-top: 5em;
+    justify-content: space-between;
+}
+.section-blog-articles-button > *{
+    width: 20%;
+}
+.section-blog-articles-button-add {
+    text-align: center;
+}
+.section-blog-articles-button-add button {
+    display: inline-block;
+    padding: 1em min(2.5vw, 40px);
+    font-size: 1rem;
+    border-radius: 5vw;
+    color: white;
+    border: none;
+    background-color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+.section-blog-articles-button-back {
+    text-align: right;
+}
+.section-blog-articles-button-back .returnButton {
+    height: 50px;
+    aspect-ratio: 1/1;
+    font-size: 2em;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1040px)  {
+    .section-blog-articles-content > *{
+        flex-wrap: wrap;
+        gap: 1.5em;
+    }
+    .section-blog-articles-button .section-blog-articles-button-add{ 
+        flex: 0 0 180px;
+    }
+}
