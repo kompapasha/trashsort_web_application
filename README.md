@@ -1,6 +1,6 @@
 Short Discription:
 
-The MERN stack was chosen for the waste sorting web application. It uses a single language—JavaScript—for both the frontend and backend, and is relatively easy to learn.
+The MERN stack was chosen for the waste sorting web application. It uses a single language - JavaScript - for both the frontend and backend, and is relatively easy to learn.
 
 Frontend
 
